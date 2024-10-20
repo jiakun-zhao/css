@@ -1,7 +1,12 @@
 {
   "name": "@jiakun-zhao/css",
   "type": "module",
-  "version": "1.0.2",
+  "version": "1.0.3",
+  "exports": {
+    ".": "./dist/index.css",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.css",
   "files": [
     "dist"
   ],
@@ -10,7 +15,7 @@
     "dev": "vite",
     "script:geist": "giget gh:vercel/geist-font/packages/next/dist/fonts src/assets/geist --forceClean",
     "commit": "git add . && git commit -m \"chore: release ${npm_package_version}\"",
-    "release": "pnpm version patch -no-git-tag-version && pnpm script:geist && pnpm build && pnpm commit && pnpm publish && npx cnpm sync ${npm_package_name} && git push"
+    "release": "pnpm version patch -no-git-tag-version && pnpm build && pnpm commit && pnpm publish && npx cnpm sync ${npm_package_name} && git push"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.8.0",
