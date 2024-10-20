@@ -1,0 +1,145 @@
+@keyframes slide-enter {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .slide-enter {
+    --slide-enter-stage: 0;
+    --slide-enter-step: 90ms;
+    --slide-enter-initial: 0s;
+  }
+
+  .slide-enter.slide-enter-current,
+  .slide-enter:not(.slide-enter-current)>* {
+    animation: 1s both slide-enter;
+    animation-delay: calc(var(--slide-enter-initial) + var(--slide-enter-stage) * var(--slide-enter-step));
+  }
+
+  .slide-enter:not(.slide-enter-current)> :first-child:not(.slide-enter) {
+    --slide-enter-stage: 1 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(2):not(.slide-enter) {
+    --slide-enter-stage: 2 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(3):not(.slide-enter) {
+    --slide-enter-stage: 3 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(4):not(.slide-enter) {
+    --slide-enter-stage: 4 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(5):not(.slide-enter) {
+    --slide-enter-stage: 5 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(6):not(.slide-enter) {
+    --slide-enter-stage: 6 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(7):not(.slide-enter) {
+    --slide-enter-stage: 7 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(8):not(.slide-enter) {
+    --slide-enter-stage: 8 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(9):not(.slide-enter) {
+    --slide-enter-stage: 9 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(10):not(.slide-enter) {
+    --slide-enter-stage: 10 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(11):not(.slide-enter) {
+    --slide-enter-stage: 11 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(12):not(.slide-enter) {
+    --slide-enter-stage: 12 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(13):not(.slide-enter) {
+    --slide-enter-stage: 13 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(14):not(.slide-enter) {
+    --slide-enter-stage: 14 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(15):not(.slide-enter) {
+    --slide-enter-stage: 15 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(16):not(.slide-enter) {
+    --slide-enter-stage: 16 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(17):not(.slide-enter) {
+    --slide-enter-stage: 17 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(18):not(.slide-enter) {
+    --slide-enter-stage: 18 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(19):not(.slide-enter) {
+    --slide-enter-stage: 19 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(20):not(.slide-enter) {
+    --slide-enter-stage: 20 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(21):not(.slide-enter) {
+    --slide-enter-stage: 21 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(22):not(.slide-enter) {
+    --slide-enter-stage: 22 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(23):not(.slide-enter) {
+    --slide-enter-stage: 23 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(24):not(.slide-enter) {
+    --slide-enter-stage: 24 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(25):not(.slide-enter) {
+    --slide-enter-stage: 25 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(26):not(.slide-enter) {
+    --slide-enter-stage: 26 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(27):not(.slide-enter) {
+    --slide-enter-stage: 27 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(28):not(.slide-enter) {
+    --slide-enter-stage: 28 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(29):not(.slide-enter) {
+    --slide-enter-stage: 29 !important;
+  }
+
+  .slide-enter:not(.slide-enter-current)> :nth-child(30):not(.slide-enter) {
+    --slide-enter-stage: 30 !important;
+  }
+}
