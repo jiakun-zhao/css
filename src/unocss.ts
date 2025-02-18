@@ -9,8 +9,8 @@ interface Options {
   blocklist?: boolean
 }
 
-export default function (options: Options) {
-  const { icon = true, blocklist = true } = options
+export default function (options?: Options) {
+  const { icon = true, blocklist = true } = options ?? {}
   return definePreset<Theme>({
     name,
     blocklist: blocklist ? ['container', 'resize'] : undefined,
