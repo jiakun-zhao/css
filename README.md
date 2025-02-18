@@ -1,7 +1,33 @@
-# @jiakun-zhao/css
+## @jiakun-zhao/css
+
+<!-- ![npm version](https://img.shields.io/npm/v/@jiakun-zhao/css?color=%236054ba) -->
+![npm version](https://img.shields.io/npm/v/@jiakun-zhao/css?color=%23954)
+
+### Install
+
+```bash
+pnpm i -D @jiakun-zhao/css
+ni -D @jiakun-zhao/css
+```
+
+### Usage
 
 ```ts
-import { name, version } from '@jiakun-zhao/css/package.json'
+// uno.config.ts
+import type { Theme } from 'unocss/preset-wind3'
+import presetHi from '@jiakun-zhao/css/unocss'
+import { defineConfig } from 'unocss'
 
-const href = `https://registry.npmmirror.com/${name}/${version}/files/dist/index.css`
+export default defineConfig<Theme>({
+  presets: [
+    presetHi()
+  ]
+})
 ```
+
+```ts
+// [vite] index.ts
+import '@jiakun-zhao/css'
+```
+
+MIT - Copyright (c) 2025 Jiakun Zhao
