@@ -10,3 +10,15 @@
     --un-scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
   }
 }
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  scrollbar-color: var(--un-scrollbar-color);
+  scrollbar-width: thin;
+}
+
+::selection {
+  background-color: #954;
+  color: white;
+}
