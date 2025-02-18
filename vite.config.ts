@@ -18,7 +18,7 @@ export default defineConfig({
     assetsInlineLimit: 0,
     cssMinify: 'lightningcss',
     rollupOptions: {
-      input: 'src/css.ts',
+      input: 'src/style.ts',
       output: {
         assetFileNames(chunk) {
           return chunk.names.find(it => it.endsWith('.css'))

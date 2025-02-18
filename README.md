@@ -7,6 +7,9 @@
 
 ```bash
 pnpm i -D @jiakun-zhao/css
+```
+Or
+```bash
 ni -D @jiakun-zhao/css
 ```
 
@@ -29,5 +32,7 @@ export default defineConfig<Theme>({
 // [vite] index.ts
 import '@jiakun-zhao/css'
 ```
+
+### LICENSE
 
 MIT - Copyright (c) 2025 Jiakun Zhao
