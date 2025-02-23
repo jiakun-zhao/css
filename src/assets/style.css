@@ -1,24 +1,41 @@
-:root {
-  font-size: 0.954rem;
-  /* --bg-primary: #fff; */
-  --un-scrollbar-color: rgba(0, 0, 0, 0.1) transparent;
-}
+@import './slide-enter.css';
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* --bg-primary: #000; */
-    --un-scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
-  }
+:where(:root) {
+  font-size: calc(16px * 0.954);
 }
 
 * {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   box-sizing: border-box;
-  scrollbar-color: var(--un-scrollbar-color);
-  scrollbar-width: thin;
 }
 
 ::selection {
-  background-color: #954;
-  color: white;
+  color: var(--selection-foreground-color, white);
+  background-color: var(--selection-background-color, #954);
+}
+
+:where(body) {
+  margin: 0;
+}
+
+:where(a) {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:where(button, input) {
+  outline: none;
+  border: none;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+:where(button, input:is([type='button' i], [type='reset' i], [type='submit' i])) {
+  cursor: pointer;
+  appearance: button;
+  -webkit-appearance: button;
+}
+
+:where(dialog:not([open])) {
+  display: none;
 }
