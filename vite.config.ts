@@ -8,7 +8,7 @@ export default defineConfig({
     lib: {
       entry: 'src/index.ts',
       formats: ['es'],
-      fileName: 'index',
+      fileName: 'import',
       cssFileName: 'index',
     },
     assetsInlineLimit: 0,

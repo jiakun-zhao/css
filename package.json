@@ -14,13 +14,13 @@
     "url": "https://github.com/jiakun-zhao/css/issues"
   },
   "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+    ".": "./dist/index.css",
+    "./import": {
+      "types": "./dist/import.d.ts",
+      "import": "./dist/import.js"
     }
   },
   "main": "./dist/index.css",
-  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
