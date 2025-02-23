@@ -22,6 +22,7 @@
   },
   "main": "./dist/index.css",
   "files": [
+    "./*.d.ts",
     "dist"
   ],
   "scripts": {
