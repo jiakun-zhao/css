@@ -210,7 +210,3 @@
     --step: 30;
   }
 }
-
-[data-animation-controller='false'] [data-slide-enter] {
-  animation: none;
-}

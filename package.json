@@ -1,8 +1,8 @@
 {
   "name": "@jiakun-zhao/css",
   "type": "module",
-  "version": "1.0.12",
-  "description": "CSS CSS CSS!",
+  "version": "1.1.4",
+  "description": "What is css?",
   "author": "Jiakun Zhao <hi@zhaojiakun.com>",
   "license": "MIT",
   "homepage": "https://github.com/jiakun-zhao/css#readme",
@@ -14,15 +14,10 @@
     "url": "https://github.com/jiakun-zhao/css/issues"
   },
   "exports": {
-    ".": "./dist/index.css",
-    "./import": {
-      "types": "./dist/import.d.ts",
-      "import": "./dist/import.js"
-    }
+    ".": "./dist/index.css"
   },
   "main": "./dist/index.css",
   "files": [
-    "./*.d.ts",
     "dist"
   ],
   "scripts": {
@@ -33,6 +28,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.3.0",
+    "@fontsource-variable/geist": "^5.0.1",
+    "@fontsource-variable/geist-mono": "^5.0.1",
     "@types/node": "^22.13.5",
     "bumpp": "^10.0.3",
     "eslint": "^9.21.0",

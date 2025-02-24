@@ -1,3 +1,6 @@
-import './assets/style.css'
+import '@fontsource-variable/geist'
+import '@fontsource-variable/geist-mono'
 
-export { default } from './assets/style.css?inline'
+import './assets/fonts.css'
+import './assets/style.css'
+import './assets/slide-enter.css'

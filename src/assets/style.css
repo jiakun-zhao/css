@@ -1,5 +1,3 @@
-@import './slide-enter.css';
-
 :where(:root) {
   font-size: calc(16px * 0.954);
 }
